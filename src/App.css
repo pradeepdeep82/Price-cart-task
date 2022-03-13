@@ -1,38 +1,55 @@
-.App {
+body{
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.priceTable{
+  background-color: white;
   text-align: center;
+  margin-top: 10px;
+  border-radius: 15px;
+
+}
+.priceTable:hover{
+
+  transition: 0.3s;
+  margin-top: 5px;
+}
+.month{
+  font-size: 15px;
+  font-weight: lighter;
+}
+.plan{
+  padding-top: 10px;
+}
+li{
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 35px;
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.checkIcon{
+  position: relative;
+  top: 5px;
+  right: 5px;
+  
+}
+.button{
+  margin-top: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 35px;
+  background-color: #33AEFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.priceTable:hover>.button{
+  background-color: #006eff;
+}
+.priceTable:hover>.button:hover{
+  background-color:#0365e4
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.disabled{
+  color: rgb(156, 156, 156);
 }
